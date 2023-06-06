@@ -6,3 +6,4 @@ public class AppTestAlgorithm {
         qlearning.runQlearning();
     }
 }
+
