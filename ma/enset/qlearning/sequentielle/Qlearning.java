@@ -6,8 +6,8 @@ public class Qlearning {
     private  final  double ALPHA=0.1;
     private final double GAMMA=0.9;
     private final  int MAX_EPOCH = 10000;
-    //private final int GRID_SIZE=3;
-    private final int GRID_SIZE=6;
+    private final int GRID_SIZE=3;
+   // private final int GRID_SIZE=6;
     private final int ACTION_SIZE=4;
     private int [][] grid;
     //table d'apprentissage
@@ -29,12 +29,19 @@ public class Qlearning {
 
         // Les recompenses
         grid = new int[][]{
+
+                {0,0,0},
+                {0,-1,0},
+                {0,0,1},
+
+                /*
                 {0,0,0,0,0,0},
                 {-1,-1,-1,-1,-1,0},
                 {0,0,0,0,0,0},
                 {0,0,0,-1,0,0},
                 {0,0,0,0,0,0},
                 {-1,0,0,0,0,1},
+                 */
                 /*
                 {0,0,1},
                 {0,-1,0},
@@ -132,3 +139,4 @@ public class Qlearning {
 
     }
 }
+
